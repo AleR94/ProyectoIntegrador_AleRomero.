@@ -1,9 +1,31 @@
+<div>
+    <button type="button" class="btn btn-primary" routerLink="/editacercade/1" *ngIf="isLogged">
+            Editar Persona
+    </button>
+</div>
+
 <div class="row">
+
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+        <img src={{persona.img}} class = "img-fluid" id="fotodeperfil">
+    </div>
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+        <p id="nombre">{{persona.nombre}} {{persona.apellido}}</p>
+        <P>Full Stack Developer Jr</P>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 descripcion">
+        <h1>Acerca de mí</h1>
+            <p>{{persona.descripcion}}</p>
+        
+    </div>
+</div>
+
+<!-- <div class="row">
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
         <img src="../../../assets/perfilPhoto.jpg" class = "img-fluid" id="fotodeperfil">
     </div>
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <p id="nombre">Romero Alexis Daniel</p>
+        <p id="nombre">{{persona.nombre}} {{persona.apellido}}</p>
         <P>Full Stack Developer Jr</P>
     </div>
     <div class="col-xs-12 col-sm-8 col-lg-8">
@@ -16,4 +38,4 @@
         </p>
         
     </div>
-</div>
+</div> -->

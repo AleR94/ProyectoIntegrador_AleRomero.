@@ -1,0 +1,17 @@
+{
+    "hosting": {
+      "public": "dist/proyecto-ale-romero",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  }
+  
